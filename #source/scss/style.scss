@@ -65,10 +65,82 @@ body {
                margin: 0;
             }
             & a {
+               position: relative;
                color: #fff;
+               // transition: .3s;
+
+                  // &:after {
+                  //    content: '';
+                  //    position: absolute;
+                  //    background-color: #fff;
+                  //    height: 2px;
+                  //    width: 0;
+                  //    left: 0;
+                  //    bottom: -5px;
+                  //    transition: .3s;
+                  // }
+                  
+                  // &:hover:after {
+                  //    width: 100%;
+                  // }
+               
+               // &:first-child:hover {
+               //    color:#949494;
+               // }
+
+
+               
             }
          }
       }
+      .test1, .test4 {
+         transition: .3s;
+         position: relative;
+      &:after {
+         content: '';
+         position: absolute;
+         background-color: #fff;
+         height: 2px;
+         width: 0;
+         left: 0;
+         bottom: -5px;
+         transition: .3s;
+      }
+      &:hover:after {
+         width: 100%;
+      }
+   }
+   .test2 {
+      transition: .3s;
+
+      &:hover {
+         color:#969696;
+      }
+   }
+   .test3 {
+      transition: .3s;
+      position: relative;
+   &:after {
+      content: '';
+      position: absolute;
+      background-color: #969696;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -5px;
+      transition: .3s;
+   }
+   &:hover:after {
+      width: 100%;
+   }
+   &:hover {
+      color:#969696;
+   }
+   }
+
+
+
+
 		// .nav__lang
 		&__lang {
          position: relative;

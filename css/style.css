@@ -149,7 +149,65 @@ body {
 }
 
 .nav__list li a {
+  position: relative;
   color: #fff;
+}
+
+.nav .test1, .nav .test4 {
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+.nav .test1:after, .nav .test4:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav .test1:hover:after, .nav .test4:hover:after {
+  width: 100%;
+}
+
+.nav .test2 {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav .test2:hover {
+  color: #969696;
+}
+
+.nav .test3 {
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+.nav .test3:after {
+  content: '';
+  position: absolute;
+  background-color: #969696;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav .test3:hover:after {
+  width: 100%;
+}
+
+.nav .test3:hover {
+  color: #969696;
 }
 
 .nav__lang {
