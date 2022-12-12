@@ -271,7 +271,7 @@ body {
 }
 
 .intro {
-  background: url("/img/main1.jpg") center 0 no-repeat;
+  background: url("../img/main1.jpg") center 0 no-repeat;
   opacity: .8;
   min-height: 560px;
 }
