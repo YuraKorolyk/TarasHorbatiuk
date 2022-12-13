@@ -8,3 +8,41 @@ burger.addEventListener('click', ()=>{
    menu.classList.toggle('active');
    body.classList.toggle('lock');
 });
+
+
+// modal
+const modalOpenBtn = document.querySelectorAll('[data-open]');
+const modalCloseBtn = document.querySelector('[data-close]');
+const modal = document.querySelector('.modal');
+
+function openModal () {
+   modal.style.display = 'block';
+   document.body.style.overflow = 'hidden';
+   modal.classList.add('show');
+
+}
+modalOpenBtn.forEach(item =>{
+   item.addEventListener ('click', () => {
+      openModal();
+   });
+   
+});
+function closeModal () {
+   modal.style.display = 'none';
+   document.body.style.overflow = '';
+   modal.classList.remove('show');
+
+}
+modalCloseBtn.addEventListener ('click', closeModal);
+
+modal.addEventListener ('click', (event) => {
+   const target = event.target;
+   if (target === modal) {
+      closeModal();
+   }
+});
+
+// document.addEventListener('keydown', (e) =>{
+//    e.preventDefault();
+//    if (e.code === 'Escape' && modal.classList.contains('show')) closeModal();
+// });
