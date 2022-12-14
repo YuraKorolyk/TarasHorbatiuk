@@ -46,3 +46,23 @@ modal.addEventListener ('click', (event) => {
 //    e.preventDefault();
 //    if (e.code === 'Escape' && modal.classList.contains('show')) closeModal();
 // });
+
+
+const topBtn = document.querySelector('#return-to-top');
+window.onscroll = () => {
+   // console.log (window.scrollY);
+
+   if (window.scrollY >= 50) {
+      // window.scrollTo(0, 0);
+      topBtn.style.display = 'block';
+   } 
+   if (window.scrollY <= 50) {
+      topBtn.style.display = 'none';
+   }
+   topBtn.addEventListener('click', () => {
+      window.scrollTo({
+         top: 0,
+         behavior: "smooth"
+     });
+   });
+};

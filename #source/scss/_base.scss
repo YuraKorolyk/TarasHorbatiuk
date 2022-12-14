@@ -14,3 +14,18 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+
+
+body {
+   color: #f2f2f2;
+   font-size: 18px;
+   font-family: 'Montserrat';
+   // font-family: 'PT Serif';
+}
+.wrapper {
+}
+.container {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
