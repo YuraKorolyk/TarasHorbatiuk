@@ -5,8 +5,9 @@
 @import "./blocks/button.scss";
 @import "./blocks/about.scss";
 @import "./blocks/go-top.scss";
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 
 
@@ -81,4 +82,10 @@
        width: 280px;
        margin: 0 auto;
    }
+}
+
+
+.test {
+   min-height: 1000px;
+   background: #252525;
 }

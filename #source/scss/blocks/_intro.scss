@@ -2,6 +2,10 @@
    background: url('../img/main1.jpg') center 0/100% auto no-repeat;
    opacity: .8;
    min-height: 560px;
+  
+      
+   
+
    // .intro__inner
    &__inner {
       max-width: 620px;
@@ -18,7 +22,7 @@
    // .intro__subtitle
    &__subtitle {
       font-size: 25px;
-      color: #C0C0C0;
+      color: #c5c5c5;
       line-height: 120%;
    }
    // .intro__button
@@ -26,9 +30,18 @@
       margin-top: 30px;
    }
 }
+@media (max-width: 1440px) {
+   .intro {
+      background-size: auto;
+   }
+}
 
 @media (max-width: 767px) {
    .intro {
+      &__inner {
+         // margin: 0 auto;
+         // text-align: center;
+      }
       &__title {
          font-size: 48px;
          line-height: 150%;
@@ -37,3 +50,18 @@
 }
 
 
+@media (max-width: 514px) {
+   .intro {
+      &__inner {
+         margin: 0 auto;
+         text-align: center;
+      }
+      &__title {
+         font-size: 36px;
+         line-height: 150%;
+      }
+      &__subtitle {
+         font-size: 21px;
+      }
+   }
+}
