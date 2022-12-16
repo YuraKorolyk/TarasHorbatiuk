@@ -80,19 +80,30 @@ padding-top: 30px;
             
             &:first-child {
                margin-bottom: 20px;
-               & span {
-                  position: relative;
-                  &:after {
-                     content: '';
-                     height: 2px;
-                     width: 100%;
-                     background: #000;
-                     position: absolute;
-                     bottom: -3px;
-                     left: 0;
-                  }
-               }
+               // & span {
+               //    position: relative;
+               //    &:after {
+               //       content: '';
+               //       height: 2px;
+               //       width: 100%;
+               //       background: #000;
+               //       position: absolute;
+               //       bottom: -3px;
+               //       left: 0;
+               //    }
+               // }
             }
+         }
+         position: relative;
+         &:after {
+            content: "";
+            width: 70%;
+            height: 2px;
+            background: #21243dпш;
+            position: absolute;
+            left: 0;
+            bottom: -12px;
+
          }
       }
 		// .text__recive
