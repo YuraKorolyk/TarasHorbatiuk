@@ -464,8 +464,8 @@ body {
   border-top: 4px solid transparent;
   border-left: 8px solid #000;
   border-bottom: 4px solid transparent;
-  top: 4px;
-  left: -12px;
+  top: 7px;
+  left: -13px;
 }
 
 .text__list li:last-child {
