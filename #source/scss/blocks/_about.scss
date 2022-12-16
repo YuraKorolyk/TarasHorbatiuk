@@ -44,6 +44,7 @@
    padding: 0 15px;
    flex: 0 1 50%;
    color: #000;
+padding-top: 30px;
    
    // // .text__title
    // &__title {
@@ -107,15 +108,24 @@
          & li {
             margin-bottom: 8px;
             position: relative;
+            line-height: 120%;
             &:before {
                content: '';
                position: absolute;
-               width: 6px;
-               height: 6px;
-               border-radius: 50%;
-               background: #020202;
-               top: 7px;
-               left: -14px;
+               // width: 6px;
+               // height: 6px;
+               // border-radius: 50%;
+               // background: #020202;
+               // top: 7px;
+               // left: -14px;
+
+               width: 0;
+               height: 0;
+               border-top: 4px solid transparent;
+               border-left: 8px solid #000;
+               border-bottom: 4px solid transparent;
+               top: 4px;
+               left: -12px;
             }
             &:last-child {
                margin: 0;
@@ -152,6 +162,7 @@
       }
    }
    .text {
+      padding-top: 0;
       &__title {
          
       }

@@ -116,6 +116,7 @@ body {
 .header__logo {
   height: 100%;
   z-index: 3;
+  padding: 12px 0;
 }
 
 .header__logo img {
@@ -405,6 +406,7 @@ body {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   color: #000;
+  padding-top: 30px;
 }
 
 .text__title {
@@ -451,17 +453,19 @@ body {
 .text__list li {
   margin-bottom: 8px;
   position: relative;
+  line-height: 120%;
 }
 
 .text__list li:before {
   content: '';
   position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #020202;
-  top: 7px;
-  left: -14px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #000;
+  border-bottom: 4px solid transparent;
+  top: 4px;
+  left: -12px;
 }
 
 .text__list li:last-child {
@@ -493,6 +497,9 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+  .text {
+    padding-top: 0;
   }
 }
 
