@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   color: #f2f2f2;
   font-size: 18px;
-  font-family: 'Prata';
+  font-family: 'Cormorant Garamond';
 }
 
 .container {
@@ -475,7 +475,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  color: #000;
+  color: #6f786a;
   padding-top: 30px;
 }
 
