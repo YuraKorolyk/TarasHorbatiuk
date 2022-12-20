@@ -28,6 +28,18 @@
    // .intro__button
    &__button {
       margin-top: 30px;
+
+      background: #fdfff5;
+      // background: none;
+      padding: 12px 18px;
+      color: #21243d;
+      font-size: 24px;
+      border: #252525 3px solid;
+      border-radius: 10px;
+      transition: .3s;
+         &:hover {
+   opacity: .7;
+         }
    }
 }
 @media (max-width: 1440px) {

@@ -50,10 +50,7 @@ modal.addEventListener ('click', (event) => {
 
 const topBtn = document.querySelector('#return-to-top');
 window.onscroll = () => {
-   // console.log (window.scrollY);
-
    if (window.scrollY >= 50) {
-      // window.scrollTo(0, 0);
       topBtn.style.display = 'block';
    } 
    if (window.scrollY <= 50) {
@@ -101,3 +98,9 @@ window.onscroll = () => {
      bodyScrollLock.enableBodyScroll(document.body);
    });
  })();
+
+
+
+
+
+

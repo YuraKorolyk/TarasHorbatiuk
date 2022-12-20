@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   color: #f2f2f2;
-  font-size: 18px;
+  font-size: 21px;
   font-family: 'Cormorant Garamond';
 }
 
@@ -152,15 +152,15 @@ body {
 
 .nav__list li a {
   position: relative;
-  color: #fff;
+  color: #f2f2f2;
 }
 
 .nav__list li a:after {
   content: '';
   position: absolute;
-  background-color: #fff;
-  height: 2px;
-  width: 0;
+  background-color: #f2f2f2;
+  height: 1px;
+  width: 100%;
   left: 0;
   bottom: -5px;
   -webkit-transition: .3s;
@@ -168,7 +168,8 @@ body {
 }
 
 .nav__list li a:hover:after {
-  width: 100%;
+  height: 3px;
+  background-color: #6f786a;
 }
 
 .nav__lang {
@@ -177,7 +178,25 @@ body {
 }
 
 .nav__lang a {
-  color: #fff;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.nav__lang a:after {
+  content: '';
+  position: absolute;
+  background-color: #f2f2f2;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav__lang a:hover:after {
+  height: 3px;
+  background-color: #6f786a;
 }
 
 @media (max-width: 767px) {
@@ -316,6 +335,18 @@ body {
 
 .intro__button {
   margin-top: 30px;
+  background: #fdfff5;
+  padding: 12px 18px;
+  color: #21243d;
+  font-size: 24px;
+  border: #252525 3px solid;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.intro__button:hover {
+  opacity: .7;
 }
 
 @media (max-width: 1440px) {
@@ -416,7 +447,7 @@ body {
 }
 
 .btn {
-  background: none;
+  background: #252525;
   padding: 12px 18px;
   color: #f2f2f2;
   font-size: 24px;
@@ -427,7 +458,7 @@ body {
 }
 
 .btn:hover {
-  background: #252525;
+  opacity: .7;
 }
 
 .about {
@@ -436,7 +467,6 @@ body {
 }
 
 .about__title {
-  font-family: 'PT Serif';
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 500;
@@ -482,8 +512,19 @@ body {
 .text__title {
   font-size: 28px;
   font-weight: 500;
-  margin: 0 0 15px 0;
-  color: #000;
+  margin: 0 0 30px 0;
+  color: #21243d;
+  position: relative;
+}
+
+.text__title:after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #21243d;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
 }
 
 .text__clients {
@@ -510,33 +551,35 @@ body {
   line-height: 120%;
   font-size: 28px;
   margin-bottom: 20px;
+  color: #21243d;
 }
 
 .text__list {
-  margin-left: 20px;
   margin-bottom: 20px;
 }
 
 .text__list li {
-  margin-bottom: 8px;
-  position: relative;
-  line-height: 120%;
+  padding: 7px 0 7px 40px;
+  line-height: 110%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
 }
 
-.text__list li:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 4px solid transparent;
-  border-left: 8px solid #000;
-  border-bottom: 4px solid transparent;
-  top: 7px;
-  left: -13px;
+.text__free {
+  background: url("../img/about/free.svg");
 }
 
-.text__list li:last-child {
-  margin: 0;
+.text__24-7 {
+  background: url("../img/about/24-7.svg");
+}
+
+.text__fast-response {
+  background: url("../img/about/fast-response.svg");
+}
+
+.text__individual {
+  background: url("../img/about/individual.svg");
 }
 
 .text__result {
@@ -603,25 +646,44 @@ body {
 }
 
 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #fdfff5;
-  padding: 25px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   border-radius: 20px;
+}
+
+.item__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.item__img {
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .item__title {
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
-  color: #252525;
+  color: #21243d;
 }
 
 .item__list li {
-  font-size: 16px;
+  font-size: 21px;
   margin-bottom: 7px;
   position: relative;
   color: #252525;
   margin-left: 15px;
-  line-height: 120%;
 }
 
 .item__list li:before {
@@ -632,7 +694,12 @@ body {
   left: -15px;
   top: 7px;
   border-radius: 50%;
-  background: #000;
+  background: #252525;
+  opacity: .9;
+}
+
+.item__button {
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
