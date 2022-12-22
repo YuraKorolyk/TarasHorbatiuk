@@ -11,10 +11,10 @@
    // .service__title
    &__title {
       text-align: center;
-      font-family: 'PT Serif';
+      // font-family: 'PT Serif';
     margin-bottom: 30px;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
    }
    // .service__row
    &__row {
@@ -43,7 +43,8 @@
       margin: 0 auto;
       margin-bottom: 20px;
    }
-   background: #fdfff5;
+   // background: #fdfff5;
+   background: url('../img/service/item-bg.jpg') 0 0/100% 100% no-repeat;
    padding: 20px 20px 20px 20px;
    border-radius: 20px;
    // .item__title

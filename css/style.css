@@ -335,9 +335,9 @@ body {
 
 .intro__button {
   margin-top: 30px;
-  background: #fdfff5;
+  background: #fdfff511;
   padding: 12px 18px;
-  color: #21243d;
+  color: #f2f2f2;
   font-size: 24px;
   border: #252525 3px solid;
   border-radius: 10px;
@@ -346,7 +346,7 @@ body {
 }
 
 .intro__button:hover {
-  opacity: .7;
+  background: #fdfff530;
 }
 
 @media (max-width: 1440px) {
@@ -625,10 +625,9 @@ body {
 
 .service__title {
   text-align: center;
-  font-family: 'PT Serif';
   margin-bottom: 30px;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .service__row {
@@ -653,7 +652,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fdfff5;
+  background: url("../img/service/item-bg.jpg") 0 0/100% 100% no-repeat;
   padding: 20px 20px 20px 20px;
   border-radius: 20px;
 }
@@ -714,6 +713,76 @@ body {
             flex: 0 1 100%;
     margin: 0 20px;
   }
+}
+
+.articles {
+  color: #21243d;
+  padding: 50px 0 150px 0;
+  background: #fdfff5;
+}
+
+.articles__title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.articles__item {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.articles__item:after {
+  content: '';
+  position: absolute;
+  background: #6f786a;
+  height: 1px;
+  width: 100%;
+  bottom: 15px;
+  left: 0;
+  opacity: .6;
+}
+
+.articles__name {
+  font-size: 26px;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.articles__name:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  height: 16px;
+  width: 2px;
+  right: 7px;
+  top: 2px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.articles__name:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  height: 2px;
+  width: 18px;
+  right: -1px;
+  top: 10px;
+}
+
+.articles__name.active:before {
+  opacity: 0;
+}
+
+.articles__text {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-top: 15px;
 }
 
 #return-to-top {

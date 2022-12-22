@@ -29,16 +29,19 @@
    &__button {
       margin-top: 30px;
 
-      background: #fdfff5;
+      background: #fdfff511;
       // background: none;
       padding: 12px 18px;
-      color: #21243d;
+      // color: #21243d;
+      color: #f2f2f2;
       font-size: 24px;
       border: #252525 3px solid;
       border-radius: 10px;
       transition: .3s;
          &:hover {
-   opacity: .7;
+   // opacity: .5;
+   background: #fdfff530;
+
          }
    }
 }
