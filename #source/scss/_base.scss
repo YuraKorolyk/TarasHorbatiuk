@@ -23,6 +23,7 @@ body {
    // font-family: 'Prata';
    font-family: 'Cormorant Garamond';
    // font-family: 'PT Serif';
+      
 }
 .wrapper {
 }
@@ -30,4 +31,8 @@ body {
    max-width: 1240px;
    margin: 0 auto;
    padding: 0 20px;
+}
+html {
+   overflow-y: scroll;
+      scroll-behavior: smooth;
 }

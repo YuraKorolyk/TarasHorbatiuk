@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 
 </head>
-<body>
+<body style="scroll-behavior: smooth;">
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -22,19 +22,18 @@
 					</div>
 					<nav class="header__nav nav">
 						<ul class="nav__list">
-							<li><a href="#">Про мене</a></li>
-							<li><a href="#">Послуги</a></li>
-							<li><a href="#">Статті</a></li>
-							<li><a href="#">Контакти</a></li>
+							<li><a href="#about">Про мене</a></li>
+							<li><a href="#service">Послуги</a></li>
+							<li><a href="#articles">Статті</a></li>
+							<li><a href="#contacts">Контакти</a></li>
 						</ul>
 						<div class="nav__lang">
 							<a href="#" class="nav__ukr">UA</a>
 							<span class="nav__line">|</span>
-							<a href="#" class="nav__eng">ENG</a>
+							<a href="index-eng.html" class="nav__eng">ENG</a>
 						</div>
 					</nav>
 				</div>
-				
 			</div>
 		</header>
 		<div class="intro">
@@ -46,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="about">
+		<div class="about" id="about">
 			<div class="container">		
 				<div class="about__content">
 					<div class="about__photo"><img src="img/about/about.jpg" alt="about-me"></div>
@@ -73,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="service">
+		<div class="service"  id="service">
 			<div class="container">
 				<div class="service__title">Послуги</div>
 				<div class="service__row">
@@ -92,7 +91,7 @@
 								<li>юридична консультація іноземців</li>
 							</ul>
 						</div>
-						<button data-open class="item__button btn">Замовити послугу</button>
+						<button data-open class="item__button btn btn1">Замовити послугу</button>
 					</div>
 					<div class="service__item item">
 						<div class="item__content">
@@ -106,7 +105,7 @@
 								<li>юридичний супровід на всіх етапах придбання об’єкта нерухомості</li>
 							</ul>
 						</div>
-						<button data-open class="item__button btn">Замовити послугу</button>
+						<button data-open class="item__button btn btn2">Замовити послугу</button>
 					</div>
 					<div class="service__item item">
 						<div class="item__content">
@@ -121,13 +120,13 @@
 								<li>професійна консультація</li>
 							</ul>
 						</div>
-						<button data-open class="item__button btn">Замовити послугу</button>
+						<button data-open class="item__button btn btn3">Замовити послугу</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="articles">
+	<div class="articles" id="articles">
 		<div class="container">
 			<div class="articles__title">Статті</div>
 			<div class="articles__item">
