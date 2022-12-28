@@ -24,6 +24,7 @@
       font-size: 25px;
       color: #c5c5c5;
       line-height: 120%;
+      text-shadow: 1px 0px 10px black;
    }
    // .intro__button
    &__button {
@@ -53,6 +54,10 @@
 
 @media (max-width: 767px) {
    .intro {
+      background: url('../img/main2.jpg') center 0/100% auto no-repeat;   
+      background-size: auto;
+      
+      
       &__inner {
          // margin: 0 auto;
          // text-align: center;
@@ -77,6 +82,7 @@
       }
       &__subtitle {
          font-size: 21px;
+         text-shadow: 0 0 4px black;
       }
    }
 }

@@ -336,6 +336,7 @@ html {
   font-size: 25px;
   color: #c5c5c5;
   line-height: 120%;
+  text-shadow: 1px 0px 10px black;
 }
 
 .intro__button {
@@ -361,6 +362,10 @@ html {
 }
 
 @media (max-width: 767px) {
+  .intro {
+    background: url("../img/main2.jpg") center 0/100% auto no-repeat;
+    background-size: auto;
+  }
   .intro__title {
     font-size: 48px;
     line-height: 150%;
@@ -378,6 +383,7 @@ html {
   }
   .intro__subtitle {
     font-size: 21px;
+    text-shadow: 0 0 4px black;
   }
 }
 
@@ -461,30 +467,11 @@ html {
   transition: .3s;
   -webkit-box-shadow: 0px 0px 13px 1px rgba(37, 37, 37, 0.6);
           box-shadow: 0px 0px 13px 1px rgba(37, 37, 37, 0.6);
-}
-
-.btn1 {
   background: #ec6e1c;
 }
 
-.btn1:hover {
+.btn:hover {
   background: #252525;
-}
-
-.btn2 {
-  background: #d37834;
-}
-
-.btn2:hover {
-  opacity: .7;
-}
-
-.btn3 {
-  background: #252525;
-}
-
-.btn3:hover {
-  opacity: .7;
 }
 
 .about {
@@ -743,7 +730,7 @@ html {
 
 .articles {
   color: #21243d;
-  padding: 50px 0 150px 0;
+  padding: 50px 0 50px 0;
   background: #fdfff5;
 }
 
@@ -763,7 +750,7 @@ html {
   content: '';
   position: absolute;
   background: #6f786a;
-  height: 1px;
+  height: 2px;
   width: 100%;
   bottom: 15px;
   left: 0;
@@ -811,6 +798,18 @@ html {
   padding-top: 15px;
 }
 
+@media (max-width: 514px) {
+  .articles__name {
+    font-size: 21px;
+    padding-right: 15px;
+  }
+}
+
+.footer {
+  min-height: 200px;
+  background: #252525;
+}
+
 #return-to-top {
   position: fixed;
   bottom: 20px;
@@ -832,9 +831,9 @@ html {
   color: #fff;
   margin: 0;
   position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
+  left: 17px;
+  top: 18px;
+  font-size: 21px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
