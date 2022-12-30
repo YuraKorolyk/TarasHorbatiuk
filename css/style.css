@@ -315,15 +315,26 @@ html {
 
 .intro {
   background: url("../img/main1.jpg") center 0/100% auto no-repeat;
-  opacity: .8;
   min-height: 560px;
+  position: relative;
+}
+
+.intro:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
 }
 
 .intro__inner {
   max-width: 620px;
   padding-top: 40px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .intro__title {
@@ -336,14 +347,13 @@ html {
 
 .intro__subtitle {
   font-size: 25px;
-  color: #c5c5c5;
   line-height: 120%;
   text-shadow: 1px 0px 10px black;
 }
 
 .intro__button {
   margin-top: 30px;
-  background: #fdfff511;
+  background: #252525d6;
   padding: 12px 18px;
   color: #f2f2f2;
   font-size: 24px;
@@ -354,7 +364,7 @@ html {
 }
 
 .intro__button:hover {
-  background: #fdfff530;
+  background: #373737d6;
 }
 
 @media (max-width: 1440px) {
@@ -367,22 +377,13 @@ html {
   .intro {
     background: url("../img/main2.jpg") center 0/100% auto no-repeat;
     background-size: auto;
-    opacity: 1;
-    position: relative;
-  }
-  .intro:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.25);
-    pointer-events: none;
   }
   .intro__title {
     font-size: 48px;
     line-height: 150%;
+  }
+  .intro__button {
+    margin-top: 90px;
   }
 }
 
