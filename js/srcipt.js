@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function(){
    const menu = document.querySelector('.header__nav');
    const body = document.querySelector('body');
    const navLink = document.querySelectorAll('.nav__link');
-   // const girls = document.querySelector()
 
    burger.addEventListener('click', ()=>{
       burger.classList.toggle('active');

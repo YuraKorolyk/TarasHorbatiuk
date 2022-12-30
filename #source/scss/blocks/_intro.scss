@@ -1,15 +1,15 @@
 .intro {
    background: url('../img/main1.jpg') center 0/100% auto no-repeat;
    opacity: .8;
-   min-height: 560px;
-  
-      
+   min-height: 560px;      
    
 
    // .intro__inner
    &__inner {
       max-width: 620px;
       padding-top: 40px;
+      position: relative;
+      z-index: 2;
    }
    // .intro__title
    &__title {
@@ -54,9 +54,17 @@
 
 @media (max-width: 767px) {
    .intro {
-      background: url('../img/main2.jpg') center 0/100% auto no-repeat;   
+      background: url('../img/main2.jpg') center 0/100% auto no-repeat;
       background-size: auto;
-      
+      opacity: 1;
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         top: 0; bottom: 0; left: 0; right: 0; 
+         background: rgba(0, 0, 0, 0.25);
+         pointer-events: none;
+       }
       
       &__inner {
          // margin: 0 auto;
