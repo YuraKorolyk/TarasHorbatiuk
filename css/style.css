@@ -353,7 +353,7 @@ html {
 
 .intro__button {
   margin-top: 30px;
-  background: #252525d6;
+  background: #2525256b;
   padding: 12px 18px;
   color: #f2f2f2;
   font-size: 24px;
@@ -383,7 +383,7 @@ html {
     line-height: 150%;
   }
   .intro__button {
-    margin-top: 90px;
+    margin-top: 220px;
   }
 }
 
@@ -399,6 +399,9 @@ html {
   .intro__subtitle {
     font-size: 21px;
     text-shadow: 0 0 4px black;
+  }
+  .intro__button {
+    background: #252525d6;
   }
 }
 
@@ -772,7 +775,20 @@ html {
   opacity: .6;
 }
 
+.articles__item p {
+  margin: 10px 0;
+}
+
+.articles__item li {
+  margin-bottom: 5px;
+}
+
+.articles__item ol {
+  list-style-type: decimal;
+}
+
 .articles__name {
+  padding-right: 22px;
   font-size: 26px;
   position: relative;
   -webkit-transition: .3s;
@@ -811,18 +827,97 @@ html {
   -webkit-transition: .3s;
   transition: .3s;
   padding-top: 15px;
+  text-align: justify;
 }
 
 @media (max-width: 514px) {
   .articles__name {
     font-size: 21px;
-    padding-right: 15px;
   }
 }
 
 .footer {
-  min-height: 200px;
+  min-height: 120px;
   background: #252525;
+}
+
+.footer__inner {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33333%;
+          flex: 0 1 33.33333%;
+  font-size: 34px;
+}
+
+.footer__center {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33333%;
+          flex: 0 1 33.33333%;
+  text-align: center;
+}
+
+.footer__icons {
+  margin-bottom: 10px;
+}
+
+.footer__icons img {
+  height: 30px;
+  width: 30px;
+}
+
+.footer__icon {
+  margin-right: 10px;
+}
+
+.footer__icon:last-child {
+  margin: 0;
+}
+
+.footer__email {
+  color: #f2f2f2;
+}
+
+.footer__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33333%;
+          flex: 0 1 33.33333%;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer__inner {
+    padding: 30px 0;
+  }
+  .footer__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer__center {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-bottom: 30px;
+  }
+  .footer__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: center;
+  }
 }
 
 #return-to-top {

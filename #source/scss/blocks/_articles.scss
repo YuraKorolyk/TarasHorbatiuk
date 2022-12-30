@@ -2,6 +2,7 @@
    color: #21243d;
    padding: 50px 0 50px 0;
    background: #fdfff5;
+ 
    // .articles__title
    &__title {
       font-size: 48px;
@@ -23,9 +24,19 @@
          left: 0;
          opacity: .6;
       }
+      & p {
+         margin: 10px 0;
+      }
+      & li {
+         margin-bottom: 5px;
+      }
+      & ol {
+         list-style-type: decimal;
+      }
    }
    // .articles__name
    &__name {
+      padding-right: 22px;
       font-size: 26px;
       position: relative;
       transition: .3s;
@@ -62,15 +73,18 @@
       overflow: hidden;
       transition: .3s;
       padding-top: 15px;
+      text-align: justify;
+
    }
 }
 
 
 @media (max-width: 514px) {
   .articles {
+  
    &__name {
       font-size: 21px;
-      padding-right: 15px;
+      
    }
   }
 }

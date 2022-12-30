@@ -36,8 +36,7 @@
    // .intro__button
    &__button {
       margin-top: 30px;
-
-      background: #252525d6;
+      background: #2525256b;
       // background: none;
       padding: 12px 18px;
       // color: #21243d;
@@ -62,7 +61,6 @@
       background: url('../img/main2.jpg') center 0/100% auto no-repeat;
       background-size: auto;
       
-      
       &__inner {
          // margin: 0 auto;
          // text-align: center;
@@ -72,7 +70,7 @@
          line-height: 150%;
       }
       &__button {
-         margin-top: 90px;
+         margin-top: 220px;
       }
    }
 }
@@ -91,6 +89,9 @@
       &__subtitle {
          font-size: 21px;
          text-shadow: 0 0 4px black;
+      }
+      &__button {
+         background: #252525d6;
       }
    }
 }
