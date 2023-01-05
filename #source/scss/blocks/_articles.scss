@@ -34,6 +34,15 @@
          list-style-type: decimal;
       }
    }
+   &__weight {
+      font-weight: 700;
+   }
+   &__center {
+      text-align: center;
+   }
+   &__style {
+      font-style: italic;
+   }
    // .articles__name
    &__name {
       padding-right: 22px;
@@ -77,7 +86,6 @@
 
    }
 }
-
 
 @media (max-width: 514px) {
   .articles {
