@@ -30,6 +30,15 @@
          }
          
       }
+      &__title-2 {
+         z-index: 3;
+         padding: 0 30px;
+         font-size: 32px;
+         // max-width: 400px;
+         text-align: center;
+
+         display: none;
+      }
 		// .header__burger
 		&__burger {
          display: none;
@@ -155,7 +164,11 @@
    }
    .header {
       &__inner {
-         height: 60px;
+         // height: 60px;
+
+      }
+      &__title-2 {
+         display: block;
       }
       &__logo {
          & img {
@@ -207,3 +220,11 @@
    }
 }
 
+@media (max-width: 514px) {
+   .header {
+      &__title-2 {
+         font-size: 26px;
+         padding: 0 5px;
+      }
+   }
+}
