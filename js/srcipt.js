@@ -108,15 +108,18 @@ document.addEventListener("DOMContentLoaded", function(){
       postData(form);
    
       function postData(form) {
-         form.addEventListener('submit', (e) => {
-             e.preventDefault();
-             const formData = new FormData(form);
-             fetch('server.php', {
-                 method: 'POST',
-                 body: formData
-             }).finally(()=>{
-               form.reset();
-             })
-         });
+         if (form) {
+            form.addEventListener('submit', (e) => {
+               e.preventDefault();
+               const formData = new FormData(form);
+               fetch('server.php', {
+                   method: 'POST',
+                   body: formData
+               }).finally(()=>{
+                 form.reset();
+               })
+           });
+         }
+         
       }
 });
