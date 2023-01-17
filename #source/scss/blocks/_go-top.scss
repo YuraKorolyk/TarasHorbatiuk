@@ -22,13 +22,14 @@
     font-size: 21px;
     transition: all 0.3s ease;
 }
-
-#return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-    color: #fff;
-    top: 5px;
+@media (min-width: 767px) {
+    #return-to-top:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    #return-to-top:hover i {
+        color: #fff;
+        top: 5px;
+    }
 }
 @media (max-width: 767px) {
     #return-to-top {

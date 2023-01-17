@@ -62,8 +62,8 @@
       background-size: auto;
       
       &__inner {
-         // margin: 0 auto;
-         // text-align: center;
+         margin: 0 auto;
+         text-align: center;
          padding-top: 360px;
          
       }
@@ -85,7 +85,7 @@
          }
       }
       &__button {
-         // margin-top: 220px;
+         background: #252525d6;
       }
    }
 }
@@ -106,8 +106,6 @@
          font-size: 21px;
          text-shadow: 0 0 4px black;
       }
-      &__button {
-         background: #252525d6;
-      }
+     
    }
 }
