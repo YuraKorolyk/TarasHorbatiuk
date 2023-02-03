@@ -513,8 +513,8 @@ html {
   border-radius: 9px;
   -webkit-transition: .3s;
   transition: .3s;
-  -webkit-box-shadow: 0px 0px 13px 1px rgba(37, 37, 37, 0.6);
-          box-shadow: 0px 0px 13px 1px rgba(37, 37, 37, 0.6);
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(37, 37, 37, 0.45);
+          box-shadow: 0px 0px 13px 1px rgba(37, 37, 37, 0.45);
   background: #ec6e1c;
 }
 
@@ -714,7 +714,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   background: url("../img/service/item-bg.jpg") 0 0/100% 100% no-repeat;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   border-radius: 20px;
 }
 
@@ -736,6 +736,7 @@ html {
   font-size: 26px;
   margin-bottom: 20px;
   color: #21243d;
+  font-weight: 600;
 }
 
 .item__list li {
@@ -773,6 +774,15 @@ html {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin: 0 20px;
+  }
+  .item {
+    padding: 15px;
+  }
+  .item img {
+    margin-bottom: 10px;
+  }
+  .item__title {
+    margin-bottom: 15px;
   }
 }
 
@@ -854,6 +864,7 @@ html {
   -webkit-transition: .3s;
   transition: .3s;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .articles__name:before {
@@ -885,8 +896,8 @@ html {
 .articles__text {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  transition: .5s;
   padding-top: 15px;
   text-align: justify;
   line-height: 96%;
@@ -1006,22 +1017,6 @@ html {
   width: 100%;
 }
 
-.footer__adress:after {
-  content: '';
-  position: absolute;
-  background-color: #6f786a;
-  height: 3px;
-  width: 0%;
-  left: 0;
-  bottom: -5px;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.footer__adress:hover:after {
-  width: 100%;
-}
-
 @media (max-width: 767px) {
   .footer__inner {
     padding: 30px 0;
@@ -1090,14 +1085,13 @@ html {
   transition: all 0.3s ease;
 }
 
-#return-to-top i {
-  font-style: normal;
+#return-to-top img {
+  z-index: 100;
+  width: 18px;
   color: #fff;
-  margin: 0;
   position: relative;
-  left: 17px;
+  left: 16px;
   top: 18px;
-  font-size: 21px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1106,9 +1100,8 @@ html {
   #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
   }
-  #return-to-top:hover i {
-    color: #fff;
-    top: 5px;
+  #return-to-top:hover img {
+    top: 13px;
   }
 }
 
@@ -1117,8 +1110,9 @@ html {
     width: 40px;
     height: 40px;
   }
-  #return-to-top i {
+  #return-to-top img {
+    width: 15px;
     left: 12px;
-    top: 13px;
+    top: 15px;
   }
 }

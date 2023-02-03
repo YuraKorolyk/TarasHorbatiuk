@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function(){
       menu.classList.toggle('active');
       body.classList.toggle('lock');
    });
-   // function closeNav () {
       navLink.forEach(item => {
          item.addEventListener('click', ()=> {
             burger.classList.remove('active');
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
             body.classList.remove('lock');
          });
       });
-   // }
 
    // modal
    const modalOpenBtn = document.querySelectorAll('[data-open]');
@@ -29,13 +27,11 @@ document.addEventListener("DOMContentLoaded", function(){
       modal.style.display = 'block';
       document.body.style.overflow = 'hidden';
       modal.classList.add('show');
-
    }
    modalOpenBtn.forEach(item =>{
       item.addEventListener ('click', () => {
          openModal();
       });
-      
    });
    function closeModal () {
       modal.style.display = 'none';
@@ -52,12 +48,6 @@ document.addEventListener("DOMContentLoaded", function(){
       }
    });
 
-   // document.addEventListener('keydown', (e) =>{
-   //    e.preventDefault();
-   //    if (e.code === 'Escape' && modal.classList.contains('show')) closeModal();
-   // });
-
-
    const topBtn = document.querySelector('#return-to-top');
    window.onscroll = () => {
       if (window.scrollY >= 50) {
@@ -73,10 +63,6 @@ document.addEventListener("DOMContentLoaded", function(){
       });
       });
    };
-
-
-
-
    // articles
    const articlesName = document.querySelectorAll(".articles__name");
    const articlesText = document.querySelectorAll(".articles__text");
@@ -101,8 +87,6 @@ document.addEventListener("DOMContentLoaded", function(){
       item.classList.remove("active");
    });
    }
-
-
    // tg send
       const form = document.querySelector('.modal__form');
       postData(form);
